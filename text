@@ -1,0 +1,2 @@
+para iniciar este proyecto, el .mod, tuve que hacer cd hasta la carpeta y luego poner este commando
+go mod init github.com/dosorio55/hola-mundo
