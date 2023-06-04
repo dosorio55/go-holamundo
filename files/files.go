@@ -3,10 +3,10 @@ package files
 import (
 	"bufio"
 	"fmt"
-	"strconv"
-	"io/ioutil"
 	"github.com/dosorio55/hola-mundo/iterations"
+	"io/ioutil"
 	"os"
+	"strconv"
 )
 
 var filePathName string = "./files/table.txt"
@@ -93,5 +93,13 @@ func askUserForInput() bool {
 	} else {
 		fmt.Println("se ha producido un error")
 		return false
+	}
+}
+
+var tabla [10]int = [10]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+
+func PrintTabla() {
+	for _, item := range tabla {
+		fmt.Println(item)
 	}
 }

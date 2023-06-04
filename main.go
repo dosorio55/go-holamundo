@@ -14,5 +14,6 @@ func main() {
 	// fmt.Printf(iterations.IterationsCalculator())
 	// files.AddToFile()
 	// files.ReadFile()
-	files.PromptUser()
+	files.PrintTabla()
+	// files.PromptUser()
 }
