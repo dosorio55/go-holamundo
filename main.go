@@ -1,14 +1,12 @@
 package main
 
 import (
-	"fmt"
-
-	"github.com/dosorio55/hola-mundo/ejercicios"
+	// "fmt"
+	"github.com/dosorio55/hola-mundo/keyboards_input"
 	// "github.com/dosorio55/hola-mundo/variables"
 	// "runtime"
 )
 
 func main() {
-	myString, message := ejercicios.ReturnValues("10")
-	fmt.Println(myString, message)
+	keyboardsinput.KeyboardsInput()
 }
