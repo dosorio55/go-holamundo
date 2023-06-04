@@ -1,3 +1,3 @@
 git add -A
-git commit -m "added ifs"
+git commit -m "ejercicio 1"
 git push
