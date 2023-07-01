@@ -1,19 +1,18 @@
 package main
 
 import (
-	// "github.com/dosorio55/hola-mundo/users"
 	"fmt"
-	// I can add a name to name the package and abreviate it
-	in "github.com/dosorio55/hola-mundo/interfaces"
-	"github.com/dosorio55/hola-mundo/models"
+
+	"github.com/dosorio55/hola-mundo/goRoutines"
 )
 
 func main() {
-	human := new(models.Person)
+	channel1 := make(chan bool)
+	defer func() {
+		<-channel1
+	}()
+	go goRoutines.GoRoutines(channel1)
 
-	aliveHuman := in.MyHuman(human)
+	fmt.Println("Hola Mundo!")
 
-	fmt.Println(aliveHuman)
-
-	// users.CreateUser()
 }
