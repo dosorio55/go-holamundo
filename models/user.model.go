@@ -7,7 +7,7 @@ import (
 type User struct {
 	Id        int
 	Name      string
-	CreatedAt time.Time
+	// CreatedAt time.Time
 	Status    bool
 }
 
@@ -21,6 +21,10 @@ func(this *User) AddUser(id int, name string, createdAt time.Time, Status bool) 
 	// without it, the values are not going to be changed in this same object
 	this.Id = id
 	this.Name = name
-	this.CreatedAt = createdAt
+	// this.CreatedAt = createdAt
 	this.Status = Status
+}
+
+func(u User) UpdateName(name string) {
+	 u.Name = name
 }
